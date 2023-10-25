@@ -1,10 +1,11 @@
 import { styled } from '@mui/material';
 import { ReactComponent as Logo } from '../Header/ux_things.svg';
+import { Button } from '../../../node_modules/@mui/material/index';
 
 const MyLogo = styled(Logo)(() => ({
   fill: 'red',
-  width: '125px',
-  height: '35px',
+  width: '100%',
+  height: '100%',
   '&:hover': {
     fill: 'black',
   },
@@ -23,9 +24,7 @@ const MyButton = styled('button')(() => ({
   minWidth: '160px',
   lineHeight: '30px',
   height: '35px',
+  border: 'none',
 }));
 
-const MyH1 = styled('h1')(() => ({
-  fontSize: '4.5 rem',
-}));
-export { MyLogo, MyButton, MyH1 };
+export { MyButton, MyLogo };

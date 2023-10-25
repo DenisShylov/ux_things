@@ -7,3 +7,9 @@
   background-color: black;
   color: wheat;
 }
+
+@media (min-width: 600px) {
+  .css-hyum1k-MuiToolbar-root {
+    padding: 0 !important;
+  }
+}

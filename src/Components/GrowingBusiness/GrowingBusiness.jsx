@@ -1,15 +1,16 @@
+import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
 import { Box, Typography } from '@mui/material';
 import { MyButton } from 'Components/Styles/StyledComponents';
-import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
 import React from 'react';
 
 const GrowingBusiness = () => {
   return (
-    <Box style={{ maxWidth: '60%' }}>
+    <Box sx={{ width: '65%' }}>
       <Typography variant="h1" sx={{ fontSize: '4.5rem' }}>
         Unlimited design & development to support your
         <Typography
-          variant="span"
+          variant="h1"
+          component="span"
           sx={{
             display: 'inline-block',
             backgroundColor: 'red',
@@ -20,11 +21,11 @@ const GrowingBusiness = () => {
           growing business
         </Typography>
       </Typography>
-      <Typography variant={'h2'} sx={{ fontSize: '2rem' }}>
+      <Typography variant={'h2'} sx={{ fontSize: '2rem', margin: '30px 0' }}>
         We're transforming the way businesses approach all things digital. No
         more hassles with freelancers or costly traditional agencies.
       </Typography>
-      <MyButton>
+      <MyButton sx={{ padding: '10px 23px' }}>
         <>
           <AutoAwesomeOutlinedIcon sx={{ mr: 1 }} />
           Work with us

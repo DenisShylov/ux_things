@@ -1,23 +1,27 @@
-import { Container } from '@mui/material';
 import GrowingBusiness from 'Components/GrowingBusiness/GrowingBusiness';
 import Header from 'Components/Header/Header';
-import './App.css';
+
 import Reviews from 'Components/Reviews/Reviews';
+import { Box, Container } from '../node_modules/@mui/material/index';
+
 const App = () => {
   return (
-    <>
-      <Header />
-      <Container
-        sx={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          height: '100%',
-        }}
-      >
+    <Container
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        maxWidth: '1630px',
+        paddingX: '40px',
+      }}
+    >
+      <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+        <Header />
+      </Box>
+      <Box sx={{ mt: '50px', display: 'flex' }}>
         <GrowingBusiness />
         <Reviews />
-      </Container>
-    </>
+      </Box>
+    </Container>
   );
 };
 

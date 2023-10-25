@@ -1,25 +1,25 @@
-import React from 'react';
-import { Box } from '@mui/material/';
 import TextsmsOutlinedIcon from '@mui/icons-material/TextsmsOutlined';
-import { MyLogo, MyButton } from 'Components/Styles/StyledComponents';
+import { AppBar, Toolbar } from '@mui/material/';
+import { MyButton, MyLogo } from 'Components/Styles/StyledComponents';
+import React from 'react';
+import { Box } from '../../../node_modules/@mui/material/index';
 
 const Header = () => {
   return (
-    <Box
-      sx={{
-        width: '100%',
-        display: 'flex',
-        justifyContent: 'space-between',
-        paddingY: '30px ',
-      }}
-    >
-      <MyLogo className="header_logo" />
-      <MyButton variant="contained">
-        <>
-          <TextsmsOutlinedIcon sx={{ mr: 1 }} />
-          Schedule a call
-        </>
-      </MyButton>
+    <Box sx={{ flexGrow: 1, width: '70%' }}>
+      <AppBar position="sticky" sx={{ boxShadow: 'none' }}>
+        <Toolbar>
+          <Box sx={{ width: '150px', float: 'left' }}>
+            <MyLogo />
+          </Box>
+          <Box sx={{ ml: 'auto' }}>
+            <MyButton sx={{ gap: '10px' }}>
+              <TextsmsOutlinedIcon />
+              Schedule a call
+            </MyButton>
+          </Box>
+        </Toolbar>
+      </AppBar>
     </Box>
   );
 };

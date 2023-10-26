@@ -1,24 +1,6 @@
 import { Box } from '@mui/material/';
-
+import { reviewsData } from 'Constants/Constants';
 const Reviews = () => {
-  const reviewsData = [
-    {
-      id: Math.random(),
-      review: 'Nothing short of exceptional.',
-      owner: 'Lars from Likvido',
-    },
-    {
-      id: Math.random(),
-      review: 'A game-changer for our business.',
-      owner: 'Emma from Studio Skulptur',
-    },
-    {
-      id: Math.random(),
-      review: 'UX Things goes above & beyond.',
-      owner: 'Tim from Introcast',
-    },
-  ];
-
   return (
     <Box
       style={{
@@ -34,7 +16,6 @@ const Reviews = () => {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'flex-start',
-          gap: '50px',
         }}
       >
         {reviewsData.map(({ id, review, owner }) => (

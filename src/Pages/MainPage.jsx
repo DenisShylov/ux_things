@@ -1,10 +1,11 @@
+import { Box, Container } from '@mui/material';
+import Differently from 'Components/Differently/Differently';
 import GrowingBusiness from 'Components/GrowingBusiness/GrowingBusiness';
 import Header from 'Components/Header/Header';
-
 import Reviews from 'Components/Reviews/Reviews';
-import { Box, Container } from '../node_modules/@mui/material/index';
+import React from 'react';
 
-const App = () => {
+const MainPage = () => {
   return (
     <Container
       sx={{
@@ -14,15 +15,16 @@ const App = () => {
         paddingX: '40px',
       }}
     >
-      <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-        <Header />
-      </Box>
+      <Header />
+
       <Box sx={{ mt: '50px', display: 'flex' }}>
         <GrowingBusiness />
         <Reviews />
       </Box>
+      {/* <OurWork /> */}
+      <Differently />
     </Container>
   );
 };
 
-export default App;
+export default MainPage;

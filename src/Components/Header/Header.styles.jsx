@@ -1,6 +1,5 @@
 import { styled } from '@mui/material';
-import { ReactComponent as Logo } from '../Header/ux_things.svg';
-import { Button } from '../../../node_modules/@mui/material/index';
+import { ReactComponent as Logo } from 'Assets/ux_things.svg';
 
 const MyLogo = styled(Logo)(() => ({
   fill: 'red',

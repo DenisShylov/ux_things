@@ -8,8 +8,12 @@
   color: wheat;
 }
 
+.css-r5jgi8-MuiTypography-root {
+  font-size: 4.5rem !important;
+}
 @media (min-width: 600px) {
-  .css-hyum1k-MuiToolbar-root {
+  .MuiToolbar-root,
+  .MuiContainer-root {
     padding: 0 !important;
   }
 }

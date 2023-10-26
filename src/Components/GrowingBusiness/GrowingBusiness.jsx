@@ -1,6 +1,6 @@
 import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
 import { Box, Typography } from '@mui/material';
-import { MyButton } from 'Components/Styles/StyledComponents';
+import { MyButton } from 'Components/Header/Header.styles';
 import React from 'react';
 
 const GrowingBusiness = () => {
